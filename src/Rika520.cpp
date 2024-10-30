@@ -36,6 +36,6 @@ SensorData Rika520::convertData(byte data[]) {
     result.temperature = (float)((data[3] << 8) | data[4]) / 10.0;
     result.moisture = (float)((data[5] << 8) | data[6]) / 10.0;
     result.ec = (float)((data[7] << 8) | data[8]) / 1000.0;
-    //result.isValid = false;  // Default value
+    result.isValid = false;  // Default value
     return result;
 }
