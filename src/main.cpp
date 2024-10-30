@@ -4,7 +4,7 @@
 // Global variables
 Rika520 sensor;
 unsigned long previousMillis = 0;
-const long interval = 5000;
+const long interval = 1000;
 
 void setup() {
     Serial.begin(9600);
